@@ -207,7 +207,11 @@ $(function() {
 			} else {
 				gifFile = gifData;
 			}
-
+			/*
+	 		*Need to add this somehow in this part (Added to alertHandler.js by WillKillYaQuick in version 2.4.0.3)
+			*if (imageFile.endsWith('webm')) {
+            		*	$("#imageLocation").html('<video autoplay src="/config/gif-alerts/' + imageFile + '">  Your browser does not support the video tag.').fadeIn(1000);
+	 		*/
 			// Append a new the image.
 			$('#alert').append($('<img/>', {
 				'src': defaultPath + gifFile,
